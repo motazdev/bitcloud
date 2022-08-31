@@ -1,0 +1,204 @@
+@mixin make-container($padding-x: $container-padding-x) {
+  width: 100%;
+  padding-right: 80px !important;
+  padding-left: 80px !important;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-wrap: inherit;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bitc__navbar-container {
+  @include make-container();
+}
+
+.bitc__landing {
+  background-color: $bgColor;
+  .bitc__landing-hero {
+
+
+    .bitc__landing-infos {
+      max-width: 544px;
+      h1 {
+        color: #FCFCFD;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 64px;
+      }
+      p{
+        margin-top: 16px;
+        color: #67676F;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        font-family: 'Poppins';
+
+      }
+      button {
+        margin-top: 16px;
+        padding: 16px 24px;
+        background: $primaryColor;
+        border-radius: 90px;  
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 16px;
+      }
+
+      .bitc__landing-hero-down-arr {
+        margin-top: 90px;
+      }
+    }
+
+    .bitc__landing-img {
+      img {
+        width: 924px;
+      }
+    }
+  }
+
+
+  .bitc__landing-hero-news {
+    
+    .bitc__landing-hero-news-boxes {
+      background-color: #3B3B4B;
+      border-radius: 24px;
+      padding: 24px;
+
+      .higher-curr-news-box {
+        background-color: #26282E;
+        box-shadow: 0px 64px 64px -48px rgba(15, 15, 15, 0.1);
+      }
+
+      .bitc__landing-hero-news-box-content {
+        padding: 32px 0px 32px 32px;
+        min-width: 244px;
+        max-height: 204px;
+        border-radius: 12px;
+
+        img {
+          margin-bottom: 18px;
+          max-width: 40px;
+        }
+
+        .coin-infos {
+          .currence-format-range {
+
+            .curr-format {
+              color: #67676F;
+              font-family: 'Poppins';
+              font-weight: 600;
+              font-size: 12px;
+              line-height: 20px;            
+            }
+  
+            .curr-range{
+              background: #58BD7D;
+              border-radius: 24px;
+              font-family: 'Poppins';
+              font-weight: 600;
+              font-size: 12px;
+              line-height: 20px;
+              color: #FCFCFD;  
+              padding: 2px 8px;
+              margin-left: 12px;
+            }
+  
+            .low-curr-range {
+              background-color: #e74c3c;
+            }
+  
+          }
+          .currence-ammount {
+            font-family: 'Poppins';
+            color: #FCFCFD;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 32px; 
+            margin: 8px 0;
+            letter-spacing: 0.05rem;
+          }
+  
+          .currence-ammount-info {
+            font-family: 'Poppins';
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 20px;
+            color: #FCFCFD;    
+          }          
+        }
+
+      }
+
+    }
+  }
+}
+
+
+
+
+@media (max-width: 991px) {
+  .bitc__landing-hero {
+    flex-direction: column !important;
+    text-align: left;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .bitc__landing-img {
+    img {
+      width: 100% !important;
+    }
+  }
+
+  .bitc__landing-hero-down-arr {
+    display: none;
+  }
+
+  .bitc__landing-hero-news-boxes {
+    flex-direction: column;
+  }
+
+  .bitc__landing-hero-news-box-content {
+
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      
+
+  }
+
+  .coin-infos {
+    margin: 0 16px;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+  .bitc__landing-hero-news-box-content {
+    justify-content: center;
+  }
+
+
+}
+
+
+@media (min-width: 992px) {
+  .bitc__landing-hero {
+    overflow: hidden;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 50% 50%;
+  }
+
+  .bitc__landing-hero-news-box-content {
+    align-items: center;
+
+ 
+  }
+
+}

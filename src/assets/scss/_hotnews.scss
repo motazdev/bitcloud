@@ -1,0 +1,296 @@
+.bitc__hotnews {
+    background-color: $bgColor;
+    padding-top: 136px;
+
+    .bitc__hotnews-heading {
+        padding: 0 0 46px 0;
+        .bitc__hotnews-heading-title {
+            h1 {
+                color: #FCFCFD;
+                font-weight: 700;
+                font-size: 48px;
+                line-height: 56px;                
+            }
+        }
+
+        .bitc__hotnews-heading-btn {
+
+            .hotnews-more-btn {
+                text-decoration: none;
+                color: #FCFCFD;
+                border: 2px solid #26282E;
+                border-radius: 90px;
+                padding: 16px 24px;
+                
+            }
+        }
+    }
+
+    .bitc__hotnews-navs {
+
+        .bitc__hotnews-navs-list {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            padding-left: 0;
+            .bitc__hotnews-active-item {
+                color: #FCFCFD !important;
+                background: #26282E;
+                border-radius: 100px;
+            }
+            .bitc__hotnews-nav-item:first-of-type {
+                margin-left: 0;
+            }
+            .bitc__hotnews-nav-item {
+                color: $darkFont;
+                padding: 6px 12px;
+                margin-left: calc(36px - 12px);
+                cursor: pointer;
+                &:hover {
+                    transition: all 0.3s ease-in;
+                    -webkit-transition: all 0.3s ease-in;
+                    -moz-transition: all 0.3s ease-in;
+                    -ms-transition: all 0.3s ease-in;
+                    -o-transition: all 0.3s ease-in;
+                    background: #26282E;
+                    border-radius: 100px;
+                }             
+            }
+        }
+    }
+
+    .bitc__hotnews-news-section {
+        margin-top: calc(80px - 16px);
+        justify-content: space-between;
+        flex-direction: row;
+        .bitc__hotnews-features-news {
+            display: flex;
+            img.hotnews-img {
+                width: 100%;
+                background: #E7F1EE;
+                border-radius: 20px;
+            }
+            .bitc__hotnews-features-news-content {
+                display: flex;
+                flex-direction: row;
+                margin-top: 40px;
+                justify-content: space-between;
+
+                .bitc__hotnews-features-news-infos {
+                    h1 {
+                        letter-spacing: -0.01em;
+                        color: #FCFCFD;
+                    }
+                    p {
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 24px;
+                        color: $darkFont;
+                    }
+                }
+
+                .bitc__hotnews-features-news-infos-btn {
+                    button {
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 16px;
+                        color: #FCFCFD;    
+                        text-decoration: none;
+                        border: 2px solid #26282E;
+                        border-radius: 90px;
+                        padding: 16px 24px;
+                        background-color: transparent; 
+                        
+                        span {
+                            margin-left: 15px;
+                            font-size: 12px;
+                            color: $darkFont;
+                        }
+                    }
+                }
+            }
+        }
+
+        .bitc__hotnews-recent-news {
+            display: flex;
+            .bitc__hotnews-recent-news-box {
+                justify-content: space-between;
+                // min-width: 482px;
+                img {
+
+                    background-color: #DDCBE7;
+                    border-radius: 16px;
+                }
+
+                .bitc__hotnews-recent-news-box-content {
+                    .recent-news-box-infos {
+                        h3 {
+                            color: #FCFCFD;
+                        }
+                        p {
+                            color: $darkFont;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 24px;                            
+                        }
+                    }
+                    .recent-news-box-date {
+                        color: $darkFont;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 24px;                        
+                    }
+
+                }
+            }
+        }
+
+        // .bitc__hotnews-sm-features-news,
+        // .bitc__hotnews-sm-recent-news {
+        // }
+
+
+        .bitc__hotnews-sm-box-content {
+            h3 {
+                font-family: 'Poppins';
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 32px;
+                color: #FCFCFD;                    
+            }
+            p {
+                color: $darkFont;
+                font-family: 'Poppins';
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 24px;                    
+            }
+        }
+
+    }
+}
+
+/* Media Queries */
+
+
+
+@media (max-width: 1024px) {
+    .bitc__hotnews-recent-news,
+    .bitc__hotnews-features-news,
+    .bitc__hotnews-features-news-infos-btn,
+    .recent-news-box-date {
+        display: none !important;
+    }
+
+    .bitc__hotnews-sm-features-news,
+    .bitc__hotnews-sm-recent-news {
+        display: flex;
+        padding: 10px 0 10px 10px;
+    }
+
+
+
+
+    .bitc__hotnews-recent-news-box {
+        flex-direction: column;
+    }
+
+    .bitc__hotnews-features-news-content {
+        .bitc__hotnews-features-news-infos {
+            h1 {
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 32px;   
+                             
+            }
+        }
+    }
+    
+ 
+
+    .bitc__hotnews-recent-news-box {
+
+        .bitc__hotnews-recent-news-box-content {
+
+            .recent-news-box-infos {
+                h3{
+                    font-weight: 600;
+                    font-size: 24px;
+                    line-height: 32px;                                    
+                }
+                p{}
+            }
+        }
+    }
+}
+
+
+
+@media (min-width: 1025px) {
+    .bitc__hotnews-recent-news-box {
+        flex-direction: row-reverse;
+    }
+    .bitc__hotnews-sm-features-news,
+    .bitc__hotnews-sm-recent-news {
+        display: none;
+    }
+
+
+    .bitc__hotnews-features-news-content {
+        .bitc__hotnews-features-news-infos {
+            max-width: 328px;
+
+            h1 {
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 40px; 
+                             
+            }
+        }
+    }
+  
+
+
+    .bitc__hotnews-recent-news-box {
+        img {
+
+        }
+        .bitc__hotnews-recent-news-box-content {
+            max-width: 246px; 
+            
+            .recent-news-box-infos {
+                h3{
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+                p{}
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .bitc__hotnews-news-section {
+        flex-direction: column !important;
+    }
+    .bitc__hotnews-heading-btn {
+        display: none !important;
+    }
+    .bitc__hotnews-heading,
+    .bitc__hotnews-navs-list {
+        justify-content: center;
+    }
+    
+
+
+
+
+}
+
+@media (min-width: 769px) {
+    .bitc__hotnews-heading {
+        justify-content: space-between;
+    }
+
+}

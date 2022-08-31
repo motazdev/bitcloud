@@ -1,14 +1,28 @@
-import './App.scss';
+import './assets/scss/App.scss';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Navbar from './components/Navbar';
+import Landing from './components/Landing';
+import HottestNews from './components/HottestNews';
+import MarketTrend from './components/MarketTrend';
+import CTrader from './components/CTrader';
+import Download from './components/Download';
+import SlideShow from './components/SlideShow';
+import HowWorks from './components/HowWorks';
+import Footer from './components/Footer';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-
-      </header>
+      <Navbar />
+      <Landing />
+      <HottestNews />
+      <MarketTrend />
+      <CTrader />
+      <Download />
+      <SlideShow />
+      <HowWorks />
+      <Footer />
     </div>
   );
 }

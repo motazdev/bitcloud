@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=DM Sans');
+
+
+/* Color Variables */
+$bgColor: #323240;
+$primaryColor: #354BFF;
+$secondaryColor: #18191D;
+$darkFont: #67676F;
+
+body {
+    font-family: 'DM Sans', sans-serif !important;
+}
+
+
+
+/* Imports */
+@import "~bootstrap/scss/bootstrap";
+
+@import './navbar';
+@import './landing';
+@import './hotnews';
+@import './markettrend';
+@import './ctrader';
+@import './downloads';
+@import './slideshow';
+@import './howworks';
+@import './footer';
+

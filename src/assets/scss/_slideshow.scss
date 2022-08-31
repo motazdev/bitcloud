@@ -1,0 +1,93 @@
+.bitc__slideshow {
+    background-color: $bgColor;
+    padding-top: 136px;
+
+    .bitc__slideshow-header {
+        max-width: 544px;
+        margin: 0 auto;
+        h1 {
+            margin-top: 16px;
+            color: #FCFCFD;
+        }
+
+        p {
+            color: $darkFont;
+            font-family: 'Poppins';
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;            
+        }
+    }
+
+    .bitc__slideshow-wrapper {
+        position: relative;
+        .bitc__slideshow-controls {
+            position: absolute;
+            top: 50%;
+            background: transparent;
+            border: none;
+            color: $darkFont;
+        }
+        .left-ctrl {
+            left: 0;
+        }
+        .right-ctrl {
+            right: 0;
+        }
+        .bitc__slideshow-slides {
+            background-color: #3B3B4B;
+            box-shadow: 0px 64px 64px -48px rgba(15, 15, 15, 0.1);
+            border-radius: 24px;            
+            padding: 0 80px;
+            margin: 0 145px;
+            .bitc__slideshow-slide {
+                display: flex;
+                justify-content: center;
+
+                .bitc__slideshow-slide-infos {
+                    span {
+                        color: $darkFont;
+                        text-transform: uppercase;
+                        font-family: 'Poppins';
+                        font-weight: 700;
+                        font-size: 12px;                        
+                    }
+                    h3 {
+                        color: #FCFCFD;
+                        margin: 16px 0;
+                        font-family: 'Poppins';
+                        font-weight: 400;
+                        font-size: 24px;    
+                        max-width: 352px;                    
+                    }
+                    p {
+                        color: $darkFont;
+                    }
+                    .bitc__slideshow-slide-info-btn {
+                        a.bitc__slideshow-slide-info-link {
+                            padding: 12px 16px;
+                            border: 2px solid #67676F;
+                            border-radius: 90px;   
+                            color: #FCFCFD;   
+                            text-decoration: none;                  
+                        } 
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .bitc__slideshow-slide {
+        flex-direction: column;
+    }
+    .bitc__slideshow-slides {
+        background-color: transparent  !important;
+        padding: 80px !important;
+        margin: 0  !important;
+    }
+}

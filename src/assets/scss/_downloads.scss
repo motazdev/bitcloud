@@ -1,0 +1,136 @@
+.bitc__download {
+    background-color: $bgColor;
+    // padding-top: 136px;
+
+    .bitc__download-wrap {
+        align-items: center;
+        justify-content: center;
+        .bitc__download-content {
+
+        
+            .bitc__download-content-infos {
+                h3 {
+                    font-weight: 700;
+                    font-size: 48px;
+                    line-height: 56px;
+                    color: #FCFCFD;
+                }
+                p {
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: $darkFont;
+                }
+            }
+
+            .bitc__download-content-apps {
+
+                ul.bitc__download-content-apps-list {
+
+                    li:nth-child(2) {
+                        border-top: solid #26282E 1px;
+                        border-bottom: solid #26282E 1px;
+                    }
+
+
+                    // li:nth-child(2) {
+                    //     img {
+
+                    //         border-radius: 50%;
+                    //         padding: 16px;
+                    //         -webkit-border-radius: 50%;
+                    //         -moz-border-radius: 50%;
+                    //         -ms-border-radius: 50%;
+                    //         -o-border-radius: 50%;
+                    //     }
+                    // }
+
+                    li.bitc__download-content-apps-app {
+                        padding: 30px 0 30px 0;
+                        align-items: center;
+                        .bitc__download-icon {
+                            background-color: #3B3B4B;
+                            padding: 16px;
+                            border-radius: 50%;
+                            -webkit-border-radius: 50%;
+                            -moz-border-radius: 50%;
+                            -ms-border-radius: 50%;
+                            -o-border-radius: 50%;  
+
+                            svg {
+                                color: #FCFCFD;
+                                width: 1.5em;
+                                height: 1.5em;
+                                // margin-right: 25px;                          
+                            }
+                        }
+
+                        .bitc__download-icon-blue {
+                            background-color: #354BFF !important;
+                            border-radius: 50%;
+                            padding: 16px;                            
+                            svg {
+                                border-radius: 50%;
+                                // padding: 16px;
+                                -webkit-border-radius: 50%;
+                                -moz-border-radius: 50%;
+                                -ms-border-radius: 50%;
+                                -o-border-radius: 50%;  
+                                color: #FCFCFD;
+                                // margin-right: 25px;                          
+                            }                            
+                        }
+
+                        .download-content {
+                            margin-left: 25px;
+                            p {
+                                font-family: 'Poppins';
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 24px;
+                                color: $darkFont;
+                            }
+                            h5 {
+                                font-family: 'Poppins';
+                                font-weight: 400;
+                                font-size: 24px;
+                                line-height: 32px;
+                                letter-spacing: -0.01em;
+                                color: #FCFCFD;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+
+
+@media (max-width: 1024px) {
+
+    .bitc__download-wrap {
+        display: flex;
+        flex-direction: column;
+    }    
+}
+
+@media screen and (min-width: 1440px) {
+
+}
+
+
+@media (max-width: 768px) {
+
+}
+
+@media (min-width: 1023px) {
+    .bitc__download-wrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}

@@ -1,0 +1,216 @@
+.bitc__footer {
+    background-color: $bgColor;
+    padding-top: 136px;
+
+    .bitc__footer-wrapper {
+
+        .upper-footer {
+            display: flex;
+            justify-content: center;
+            padding-bottom: 40px;
+            .bitc__footer-logo-w-q-acc {
+                display: flex;
+                align-items: flex-start;
+                flex: 2;
+                justify-content: space-evenly;
+                .bitc__footer-quick-access {
+                    ul {
+                        list-style: none;
+        
+                        li {
+                            margin-bottom: 24px;
+                            a {
+                                text-decoration: none;
+                                color: $darkFont;
+                            }
+                        }
+                    }
+                }
+            }
+    
+            .bitc__footer-contact {
+                flex: 2;
+                h6 {
+                    text-transform: uppercase;
+                    color: #E6E8EC;
+                    font-family: 'Poppins';
+                    font-weight: 700;
+                    font-size: 12px;
+                    margin-bottom: 41px;
+                }
+                p {
+                    color: $darkFont;
+                    font-family: 'Poppins';
+                    font-weight: 400;
+                    font-size: 14px;
+                }
+    
+                .address {
+                    max-width: 167px;
+                    line-height: 34px;
+                }
+    
+                .phone-num {
+    
+                }
+            }
+    
+            .bitc__footer-newsletter {
+                flex: 1;
+                max-width: 257px;
+                h6 {
+                    color: #E6E8EC;
+                    text-transform: uppercase;
+                    font-family: 'Poppins';
+                    font-weight: 700;
+                    font-size: 12px;
+                    margin-bottom: 41px;
+                }     
+                p {
+                    color: #E6E8EC;
+                    font-family: 'Poppins';
+                    font-weight: 400;
+                    font-size: 14px;
+                }  
+
+                form {
+                    .input-group {
+                        max-width: 257px;
+                        .news-l-input {
+                            background-color: transparent;
+                            border: 2px solid #3B3B4B;
+                            border-radius: 90px;
+                            padding: 16px 54px 16px 14px;
+                            color: #fff;
+                        }
+                        button {
+                            border-radius: 90px;
+                            border: 2px solid #3B3B4B;
+                            position: absolute;
+                            right: 8px;
+                            top: calc(50% - 20px);
+                            background: #354BFF;
+                            border-radius: 100px !important;
+                            color: #E6E8EC;
+                            -webkit-border-radius: 100px !important;
+                            -moz-border-radius: 100px !important;
+                            -ms-border-radius: 100px !important;
+                            -o-border-radius: 100px !important;
+}
+                    }
+                }     
+            }            
+        }
+
+        .bitc__footer-rights {
+            justify-content: space-between;
+
+            .rigths-text {
+                color: $darkFont;
+                font-family: 'Poppins';
+                font-weight: 400;
+                font-size: 12px;
+            }
+
+            .footer-socials {
+                ul {
+                    list-style: none;
+                    display: flex;
+                    flex-direction: row;
+                    gap: 35px;
+                    padding: 0;
+                    margin: 24px 0;
+                    li {
+                        
+                        a {
+                            color: $darkFont;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .d-rights-footer {
+        border-top: rgb(230 232 236 / 8%) solid 1px;
+    }
+}
+
+
+
+
+
+@media (max-width: 1024px) { // mobile
+    .upper-footer {
+        flex-direction: column;
+    }
+    .bitc__footer-quick-access {
+        ul {
+            display: none;
+        }
+    }
+
+    .bitc__footer-contact {
+        border-top: 1px solid #3B3B4B;
+        border-bottom: 1px solid #3B3B4B;
+        padding: 35px 0;
+    }
+
+    .bitc__footer-newsletter {
+        padding-top: 35px;
+    }
+
+    
+
+    .bitc__footer-logo-w-q-acc {
+        flex-direction: column;
+        .bitc__footer-sm-navs {
+            width: 100%;
+            margin: 35px 0;
+            select {
+                background-color: transparent;
+                color: #FCFCFD;
+                border: none;
+                background-image: url('../images/select-arr.svg') !important;
+                option {
+                    background-color: $bgColor;
+                }
+            }                
+        }
+        .logow {
+            display: none;
+        }
+        ul {
+            padding-left: 0;
+        }
+    }
+
+    .d-rights-footer {
+        .bitc__footer-rights {
+            flex-direction: column;
+            padding-top: 25px;
+        }
+    }
+}
+
+
+@media (min-width: 1023px) { // biggest
+    .upper-footer {
+        flex-direction: row;
+    }
+    .d-rights-footer {
+        .bitc__footer-rights {
+            align-items: center;
+        }
+    }
+    
+    .bitc__footer-logo-w-q-acc {
+        flex-direction: row;
+        .bitc__footer-sm-navs {
+            display: none;
+        }
+        .logowtext {
+            display: none;
+        }
+    }
+}

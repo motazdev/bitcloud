@@ -1,0 +1,144 @@
+.bitc__ctrader {
+    padding-top: 136px;
+    padding-bottom: 136px;
+    .bitc__ctrader-heading {
+        h1 {
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 56px;
+            text-align: center;
+            letter-spacing: 0.02em;
+            color: #FCFCFD;
+            max-width: 453px; 
+            margin: auto;  
+            margin-bottom: 20px;           
+
+        }
+        p {
+            font-family: 'Poppins';
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+            color: $darkFont;
+        }
+    }
+
+
+    .bitc__ctrader-feats-boxes {
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        // grid-gap: 24px;
+        margin-top: 88px;
+        gap: 24px;
+        .bitc__ctrader-box {
+            background-color: #3B3B4B;
+            border-radius: 20px;
+            align-items: center;
+            padding: 85px 32px;
+
+            .bitc__ctrader-box-title {
+                color: #FCFCFD;
+                font-family: 'Poppins';
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;  
+            }
+            p {
+                font-family: 'Poppins';
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 24px;
+                text-align: center;
+                color: $darkFont;
+                
+            }
+        }
+    }
+
+    .bitc__ctrader-contact {
+        margin-top: 80px;
+        text-align: center;
+        a.bitc__ctrader-contact-btn {
+            padding: 16px 24px;
+            background: #354BFF;
+            border-radius: 90px;     
+            text-decoration: none;
+            color: #FCFCFD;       
+        }
+    }
+}
+
+
+
+/* Media Queries */
+
+@media (min-width: 1024px) {
+    .bitc__ctrader {
+        background-color: #18191D;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .bitc__ctrader {
+        background-color: #323240;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .content {
+        max-width: 1110px;
+        margin: auto;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .bitc__ctrader-feats-boxes {
+        grid-template-rows: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 769px) {
+    .bitc__ctrader-feats-boxes {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+@media (max-width: 524px) {
+    .bitc__ctrader-box {
+        flex-basis: 311px;
+        flex-grow: 0;
+        flex-shrink: 0;  
+        margin-bottom: 5px;      
+    }
+    .bitc__ctrader-feats-boxes {
+        display: flex !important;
+        flex-direction: flex-start;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        flex-direction: row;
+
+        &::-webkit-scrollbar {
+            height: 4px;
+        }
+          
+          /* Track */
+        &::-webkit-scrollbar-track {
+            background: transparent;
+        }
+          
+          /* Handle */
+        &::-webkit-scrollbar-thumb {
+            background: $darkFont;
+        }
+          
+          /* Handle on hover */
+        &::-webkit-scrollbar-thumb:hover {
+            background: #5c5c63;
+        }
+    }
+}

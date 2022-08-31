@@ -1,0 +1,267 @@
+.bitc__mtrend {
+    background-color: $bgColor;
+    padding-top: 136px;
+    .bitc__mtrend-heading {
+        display: flex;
+        align-items: center;
+        padding: 0 0 46px 0;
+        .bitc__mtrend-heading-title {
+            h1 {
+                color: #FCFCFD;
+                font-weight: 700;
+                font-size: 48px;
+                line-height: 56px;                
+            }
+        }
+
+        .bitc__mtrend-heading-btn {
+
+            .mtrend-more-btn {
+                text-decoration: none;
+                color: #FCFCFD;
+                border: 2px solid #26282E;
+                border-radius: 90px;
+                padding: 16px 24px;
+                
+            }
+        }
+    }
+
+
+    /* Navs */
+    .bitc__mtrend-navs {
+
+        .bitc__mtrend-navs-list {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            padding-left: 0;
+            .bitc__mtrend-active-item {
+                color: #FCFCFD !important;
+                background: #26282E;
+                border-radius: 100px;
+            }
+            .bitc__mtrend-nav-item:first-of-type {
+                margin-left: 0;
+            }
+            .bitc__mtrend-nav-item {
+                color: $darkFont;
+                padding: 6px 12px;
+                margin-left: calc(36px - 12px);
+                cursor: pointer;
+                &:hover {
+                    transition: all 0.3s ease-in;
+                    -webkit-transition: all 0.3s ease-in;
+                    -moz-transition: all 0.3s ease-in;
+                    -ms-transition: all 0.3s ease-in;
+                    -o-transition: all 0.3s ease-in;
+                    background: #26282E;
+                    border-radius: 100px;
+                }             
+            }
+        }
+    } 
+    
+    .bitc__mtrend-sm-navs {
+        select {
+            background-color: $bgColor;
+            color: #FCFCFD;
+            background-image: url('../images/select-arr.svg') !important;
+        }
+    }
+
+    /* Table */
+
+    .bitc__mtrend-table {
+        margin-top: 64px;
+        .table {
+            td:first-child,
+            th:first-child {
+              border-radius: 12px 0 0 12px;
+              -webkit-border-radius: 12px 0 0 12px;
+              -moz-border-radius: 12px 0 0 12px;
+              -ms-border-radius: 12px 0 0 12px;
+              -o-border-radius: 12px 0 0 12px;
+}
+            td:last-child,
+            th:last-child {
+              border-radius: 0 12px 12px 0;
+              -webkit-border-radius: 0 12px 12px 0;
+              -moz-border-radius: 0 12px 12px 0;
+              -ms-border-radius: 0 12px 12px 0;
+              -o-border-radius: 0 12px 12px 0;
+}                        
+            thead {
+                tr {
+
+                    th {
+                        color: $darkFont;
+                    }
+                }
+            }
+
+            tbody {
+                tr {
+                    line-height: 70px;
+                    th {
+                        color: $darkFont;
+                    }
+                    td {
+
+                        .bitc__table-coins-names {
+                            .table-coin-name {
+                                font-family: 'Poppins';
+                                font-weight: 500;
+                                font-size: 16px;
+                                line-height: 24px;
+                                color: #FCFCFD;
+                            }
+                            .table-coin-abrev {
+                                font-family: 'Poppins';
+                                font-weight: 500;
+                                font-size: 16px;
+                                line-height: 24px;
+                                color: #B1B5C4;
+                            }
+                        }   
+                        
+                        .bitc__table-trade-btn {
+                            padding: 12px 16px;
+                            border: 2px solid #26282E;
+                            border-radius: 90px; 
+                            color: #FCFCFD;
+                            text-decoration: none;                           
+                        }
+                    }
+                    
+
+                    td:nth-child(3) {
+                        font-family: 'Poppins';
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 24px;
+                        color: #FCFCFD;
+                    }
+                    td:nth-child(4) {
+                        font-family: 'Poppins';
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 24px;
+                        color: #58BD7D;
+                    }
+                }
+                .bitc__table-active-td {
+                    background-color: #3B3B4B;
+
+                }
+            }
+        }
+    }
+
+    .bitc__table-view-more {
+        .bitc__table-more-btn {
+            color: #FCFCFD;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 16px;
+            padding: 16px 24px;
+            border: 2px solid #26282E;
+            border-radius: 90px;            
+        }
+    }
+
+
+
+}
+
+
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+
+    .bitc__mtrend-heading,
+    .bitc__hotnews-navs-list {
+        justify-content: center;
+    }
+
+    .bitc__mtrend-sm-navs {
+        display: flex;
+    }
+
+    .bitc__table-view-more {
+        text-align: center;
+        a {
+            display: block;
+        }
+    }
+
+    .bitc__mtrend-table {
+        table {
+            thead {
+                tr {
+                   font-size: 12px !important; 
+                }
+            }
+
+            tbody {
+                th,td {
+                    font-size: 12px !important; 
+                    .table-coin-name,
+                    .table-coin-abrev {
+
+                        font-size: 12px !important; 
+                    }
+                }
+            }
+        }
+    }
+
+    
+
+    .bitc__mtrend-navs,
+    .bitc__mtrend-heading-btn {
+        display: none;
+    }
+
+    .table {
+        thead {
+            tr {
+                th:nth-child(5),
+                th:nth-child(6) {
+                    display: none;
+                }
+            }
+        }
+
+        tbody {
+            tr {
+                td:nth-child(5),
+                td:nth-child(6) {
+                    display: none;
+                }
+            }            
+        }
+    }
+    .bitc__table-view-more {
+        visibility: visible;
+    }
+
+
+
+}
+
+@media (min-width: 769px) {
+    .bitc__mtrend-heading {
+        justify-content: space-between;
+    }
+
+    .bitc__mtrend-sm-navs {
+        display: none;
+    }
+
+    .bitc__table-view-more {
+        visibility: hidden;
+    }
+}
